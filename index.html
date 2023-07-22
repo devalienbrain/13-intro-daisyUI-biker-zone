@@ -4,95 +4,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <!-- Import Google Fonts Poppins, Inter, and Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;500&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <title>Biker Zone: daisyUI</title>
   <!-- Cdn link for Tailwind & DaisyUI -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom styles -->
+  <style>
+    .font-poppins {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .font-inter {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .font-manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
 </head>
 
-<body class="ml-40 mr-40">
+<body class="ml-40 mr-40 mt-32 mb-32">
   <header>
-    <!-- banner -->
+    <!--Carousel banner starts-->
+    <section class="h-auto font-poppins carousel w-full m-0 p-0">
 
-    <!-- banner ends -->
-    <div class="carousel w-full">
-      <div id="slide1" class="carousel-item relative w-full">
-        <div class="hero min-h-screen bg-base-200">
+      <!-- slide-1 starts -->
+      <div id="slide1" class="h-auto carousel-item relative w-full rounded">
+        <div class="hero min-h-screen bg-[#e76f511a] pl-20 pr-20 pt-0 pb-0">
           <div class="hero-content flex-col lg:flex-row-reverse">
-            <img src="images/slider/bike1.png" class="max-w-sm rounded-lg shadow-2xl" />
+            <img src="images/slider/bike1.png" class="max-w-sm" />
             <div>
-              <h1 class="text-5xl font-bold">Keep Your Ride Safe At Every Time</h1>
-              <p class="py-6">Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                amet.</p>
-              <button class="btn btn-primary">Get Started</button>
+              <h1 class="text-5xl text-[#000000] font-extrabold">Ride-on R15 V4 with Smile</h1>
+              <p class="py-6 text-sm font-light">Amet minim mollit non deserunt ullamco <br>
+                est sit aliqua dolor do amet sint. Velit officia <br> consequat duis enim velit mollit.</p>
+              <button class="btn bg-[#E76F51] text-white pt-4 pb-4 pl-8 pr-8 rounded-md">Purchase</button>
             </div>
           </div>
         </div>
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide4" class="btn btn-circle">❮</a>
-          <a href="#slide2" class="btn btn-circle">❯</a>
+          <a href="#slide4" class="font-thin"> <img class="w-10" src="images/icons/angle-left.svg" alt="">
+          </a>
+          <a href="#slide2"><img class="w-10" src="images/icons/angle-right-colored.svg" alt=""></a>
         </div>
       </div>
+      <!-- slide-1 ends -->
 
-      <div id="slide2" class="carousel-item relative w-full">
-
-        <div class="hero min-h-screen bg-base-200">
+      <!-- slide-2 starts -->
+      <div id="slide2" class="h-auto carousel-item relative w-full rounded">
+        <div class="hero min-h-screen bg-[#e76f511a] pl-20 pr-20 pt-0 pb-0">
           <div class="hero-content flex-col lg:flex-row-reverse">
-            <img src="images/slider/bike2.png" class="max-w-sm rounded-lg shadow-2xl" />
+            <img src="images/slider/bike2.png" class="max-w-sm" />
             <div>
-              <h1 class="text-5xl font-bold">Keep Your Ride Safe At Every Time</h1>
-              <p class="py-6">Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                amet.</p>
-              <button class="btn btn-primary">Get Started</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide1" class="btn btn-circle">❮</a>
-          <a href="#slide3" class="btn btn-circle">❯</a>
-        </div>
-      </div>
-      <div id="slide3" class="carousel-item relative w-full">
-        <div class="hero min-h-screen bg-base-200">
-          <div class="hero-content flex-col lg:flex-row-reverse">
-            <img src="images/slider/bike3.png" class="max-w-sm rounded-lg shadow-2xl" />
-            <div>
-              <h1 class="text-5xl font-bold">Keep Your Ride Safe At Every Time</h1>
-              <p class="py-6">Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                amet.</p>
-              <button class="btn btn-primary">Get Started</button>
+              <h1 class="text-5xl text-[#000000] font-extrabold">Ride-on R15 V4 with Smile</h1>
+              <p class="py-6 text-sm font-light">Amet minim mollit non deserunt ullamco <br>
+                est sit aliqua dolor do amet sint. Velit officia <br> consequat duis enim velit mollit.</p>
+              <button class="btn bg-[#E76F51] text-white pt-4 pb-4 pl-8 pr-8 rounded-md">Purchase</button>
             </div>
           </div>
         </div>
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide2" class="btn btn-circle">❮</a>
-          <a href="#slide4" class="btn btn-circle">❯</a>
+          <a href="#slide1" class="font-thin"> <img class="w-10" src="images/icons/angle-left.svg" alt="">
+          </a>
+          <a href="#slide3"><img class="w-10" src="images/icons/angle-right-colored.svg" alt=""></a>
         </div>
       </div>
-      <div id="slide4" class="carousel-item relative w-full">
-        <div class="hero min-h-screen bg-base-200">
+      <!-- slide-2 ends -->
+
+      <!-- slide-3 starts -->
+      <div id="slide3" class="h-auto carousel-item relative w-full rounded">
+        <div class="hero min-h-screen bg-[#e76f511a] pl-20 pr-20 pt-0 pb-0">
           <div class="hero-content flex-col lg:flex-row-reverse">
-            <img src="images/slider/bike4.png" class="max-w-sm rounded-lg shadow-2xl" />
+            <img src="images/slider/bike3.png" class="max-w-sm" />
             <div>
-              <h1 class="text-5xl font-bold">Keep Your Ride Safe At Every Time</h1>
-              <p class="py-6">Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                amet.</p>
-              <button class="btn btn-primary">Get Started</button>
+              <h1 class="text-5xl text-[#000000] font-extrabold">Ride-on R15 V4 with Smile</h1>
+              <p class="py-6 text-sm font-light">Amet minim mollit non deserunt ullamco <br>
+                est sit aliqua dolor do amet sint. Velit officia <br> consequat duis enim velit mollit.</p>
+              <button class="btn bg-[#E76F51] text-white pt-4 pb-4 pl-8 pr-8 rounded-md">Purchase</button>
             </div>
           </div>
         </div>
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide3" class="btn btn-circle">❮</a>
-          <a href="#slide1" class="btn btn-circle">❯</a>
+          <a href="#slide2" class="font-thin"> <img class="w-10" src="images/icons/angle-left.svg" alt="">
+          </a>
+          <a href="#slide4"><img class="w-10" src="images/icons/angle-right-colored.svg" alt=""></a>
         </div>
       </div>
-    </div>
+      <!-- slide-3 ends -->
+
+      <!-- slide-4 starts -->
+      <div id="slide4" class="h-auto carousel-item relative w-full rounded">
+        <div class="hero min-h-screen bg-[#e76f511a] pl-20 pr-20 pt-0 pb-0">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <img src="images/slider/bike4.png" class="max-w-sm" />
+            <div>
+              <h1 class="text-5xl text-[#000000] font-extrabold">Ride-on R15 V4 with Smile</h1>
+              <p class="py-6 text-sm font-light">Amet minim mollit non deserunt ullamco <br>
+                est sit aliqua dolor do amet sint. Velit officia <br> consequat duis enim velit mollit.</p>
+              <button class="btn bg-[#E76F51] text-white pt-4 pb-4 pl-8 pr-8 rounded-md">Purchase</button>
+            </div>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="font-thin"> <img class="w-10" src="images/icons/angle-left.svg" alt="">
+          </a>
+          <a href="#slide1"><img class="w-10" src="images/icons/angle-right-colored.svg" alt=""></a>
+        </div>
+      </div>
+      <!-- slide-4 ends -->
+    </section>
+    <!-- Carousel banner ends -->
   </header>
   <main>
 
